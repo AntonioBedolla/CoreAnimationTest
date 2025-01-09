@@ -1,0 +1,57 @@
+# Reglas deshabilitadas (puedes agregar o quitar según tus necesidades)
+disabled_rules:
+  - trailing_whitespace # Ignora espacios en blanco al final de las líneas
+  - line_length # Deshabilita la longitud de líneas si no es relevante
+
+# Reglas opcionales habilitadas
+opt_in_rules:
+  - vertical_whitespace # Controla espacios en blanco entre declaraciones
+  - function_body_length # Limita la longitud de los métodos
+  - cyclomatic_complexity # Evalúa la complejidad ciclomática de los métodos
+
+# Reglas específicas configuradas
+vertical_whitespace:
+  max_empty_lines: 1 # Permite máximo 1 línea en blanco consecutiva
+
+function_body_length:
+  warning: 50 # Advertencia si el cuerpo de un método supera 50 líneas
+  error: 100 # Error si el cuerpo de un método supera 100 líneas
+  ignores_comments: true # Ignora comentarios en el conteo de líneas
+  ignores_empty_lines: true # Ignora líneas en blanco en el conteo
+
+cyclomatic_complexity:
+  warning: 10 # Complejidad máxima permitida antes de advertencia
+  error: 20 # Complejidad máxima permitida antes de error
+
+# Longitud de líneas (opcional si decides habilitarla)
+line_length:
+  warning: 120 # Advertencia si una línea tiene más de 120 caracteres
+  error: 200 # Error si una línea tiene más de 200 caracteres
+  ignores_comments: true # Ignora comentarios en el conteo de caracteres
+  ignores_function_declarations: true # Ignora las firmas de métodos
+
+# Exclusión de carpetas y archivos
+excluded:
+  - Pods # Ignora dependencias de CocoaPods
+  - Carthage # Ignora dependencias de Carthage
+  - .build # Ignora el directorio de compilación
+
+# Archivos o directorios específicos que deben cumplir reglas estrictas
+included:
+  - Sources
+  - Tests
+
+# Otras reglas relevantes
+identifier_name:
+  min_length: # Configura longitud mínima para nombres de identificadores
+    warning: 3
+    error: 2
+  max_length: # Configura longitud máxima para nombres de identificadores
+    warning: 40
+    error: 50
+
+type_body_length:
+  warning: 200 # Advertencia si el cuerpo de una clase/struct excede 200 líneas
+  error: 400 # Error si excede 400 líneas
+  ignores_comments: true
+  ignores_empty_lines: true

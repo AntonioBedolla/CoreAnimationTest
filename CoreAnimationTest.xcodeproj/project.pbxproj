@@ -137,10 +137,12 @@
 				C8FDFD082D2F71930092EFCB /* Sources */,
 				C8FDFD092D2F71930092EFCB /* Frameworks */,
 				C8FDFD0A2D2F71930092EFCB /* Resources */,
+				C8FDFD402D2F74230092EFCB /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C8FDFD442D2F7BB60092EFCB /* PBXTargetDependency */,
 			);
 			name = CoreAnimationTest;
 			productName = CoreAnimationTest;
@@ -215,6 +217,9 @@
 				Base,
 			);
 			mainGroup = C8FDFD032D2F71930092EFCB;
+			packageReferences = (
+				C8FDFD422D2F7BA90092EFCB /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = C8FDFD0D2D2F71930092EFCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,6 +257,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8FDFD402D2F74230092EFCB /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swift run swiftlint >/dev/null; then\n    swift run swiftlint\nelse\n    echo \"SwiftLint no está configurado como dependencia. Revisa tu archivo Package.swift.\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8FDFD082D2F71930092EFCB /* Sources */ = {
@@ -293,6 +319,10 @@
 			isa = PBXTargetDependency;
 			target = C8FDFD0B2D2F71930092EFCB /* CoreAnimationTest */;
 			targetProxy = C8FDFD2D2D2F71960092EFCB /* PBXContainerItemProxy */;
+		};
+		C8FDFD442D2F7BB60092EFCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = C8FDFD432D2F7BB60092EFCB /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -601,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8FDFD422D2F7BA90092EFCB /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8FDFD432D2F7BB60092EFCB /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8FDFD422D2F7BA90092EFCB /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8FDFD042D2F71930092EFCB /* Project object */;
 }
