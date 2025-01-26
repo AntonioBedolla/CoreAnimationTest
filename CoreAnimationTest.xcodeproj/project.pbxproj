@@ -16,6 +16,7 @@
 		C8FDFD272D2F71960092EFCB /* CoreAnimationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDFD262D2F71960092EFCB /* CoreAnimationTestTests.swift */; };
 		C8FDFD312D2F71960092EFCB /* CoreAnimationTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDFD302D2F71960092EFCB /* CoreAnimationTestUITests.swift */; };
 		C8FDFD332D2F71960092EFCB /* CoreAnimationTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDFD322D2F71960092EFCB /* CoreAnimationTestUITestsLaunchTests.swift */; };
+		C8FDFD472D3166FF0092EFCB /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8FDFD452D3166FF0092EFCB /* TestModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C8FDFD2C2D2F71960092EFCB /* CoreAnimationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FDFD302D2F71960092EFCB /* CoreAnimationTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationTestUITests.swift; sourceTree = "<group>"; };
 		C8FDFD322D2F71960092EFCB /* CoreAnimationTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8FDFD462D3166FF0092EFCB /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C8FDFD032D2F71930092EFCB = {
 			isa = PBXGroup;
 			children = (
+				C8FDFD452D3166FF0092EFCB /* TestModel.xcdatamodeld */,
 				C8FDFD0E2D2F71930092EFCB /* CoreAnimationTest */,
 				C8FDFD252D2F71960092EFCB /* CoreAnimationTestTests */,
 				C8FDFD2F2D2F71960092EFCB /* CoreAnimationTestUITests */,
@@ -287,6 +290,7 @@
 				C8FDFD142D2F71930092EFCB /* ViewController.swift in Sources */,
 				C8FDFD102D2F71930092EFCB /* AppDelegate.swift in Sources */,
 				C8FDFD122D2F71930092EFCB /* SceneDelegate.swift in Sources */,
+				C8FDFD472D3166FF0092EFCB /* TestModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +654,19 @@
 			productName = "plugin:SwiftLintBuildToolPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C8FDFD452D3166FF0092EFCB /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8FDFD462D3166FF0092EFCB /* TestModel.xcdatamodel */,
+			);
+			currentVersion = C8FDFD462D3166FF0092EFCB /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C8FDFD042D2F71930092EFCB /* Project object */;
 }
