@@ -78,10 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C8FDFD032D2F71930092EFCB = {
+		C8330B942D47D3F100538BD2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				C8FDFD452D3166FF0092EFCB /* TestModel.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C8FDFD032D2F71930092EFCB = {
+			isa = PBXGroup;
+			children = (
 				C8FDFD0E2D2F71930092EFCB /* CoreAnimationTest */,
 				C8FDFD252D2F71960092EFCB /* CoreAnimationTestTests */,
 				C8FDFD2F2D2F71960092EFCB /* CoreAnimationTestUITests */,
@@ -102,6 +109,7 @@
 		C8FDFD0E2D2F71930092EFCB /* CoreAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				C8330B942D47D3F100538BD2 /* Data */,
 				C8FDFD0F2D2F71930092EFCB /* AppDelegate.swift */,
 				C8FDFD112D2F71930092EFCB /* SceneDelegate.swift */,
 				C8FDFD132D2F71930092EFCB /* ViewController.swift */,
