@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8330B962D4DA30200538BD2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330B952D4DA30200538BD2 /* CoreDataManager.swift */; };
+		C8330B992D4DAE9800538BD2 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330B982D4DAE9800538BD2 /* CategoryRepository.swift */; };
+		C8330B9B2D4DB0DF00538BD2 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330B9A2D4DB0DF00538BD2 /* TaskRepository.swift */; };
+		C8330B9E2D4DC48300538BD2 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330B9D2D4DC48300538BD2 /* CategoriesViewController.swift */; };
+		C8330BA02D4DC55900538BD2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330B9F2D4DC55900538BD2 /* TasksViewController.swift */; };
+		C8330BA52D4E832100538BD2 /* AddEditCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330BA42D4E832100538BD2 /* AddEditCategoryViewController.swift */; };
+		C8330BA92D4E8B7600538BD2 /* CategoryUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330BA82D4E8B7600538BD2 /* CategoryUpdateDelegate.swift */; };
+		C8330BAB2D4E8BB800538BD2 /* CategoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330BAA2D4E8BB800538BD2 /* CategoryProtocol.swift */; };
 		C8FDFD102D2F71930092EFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDFD0F2D2F71930092EFCB /* AppDelegate.swift */; };
 		C8FDFD122D2F71930092EFCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDFD112D2F71930092EFCB /* SceneDelegate.swift */; };
 		C8FDFD142D2F71930092EFCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDFD132D2F71930092EFCB /* ViewController.swift */; };
@@ -37,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8330B952D4DA30200538BD2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C8330B982D4DAE9800538BD2 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		C8330B9A2D4DB0DF00538BD2 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		C8330B9D2D4DC48300538BD2 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		C8330B9F2D4DC55900538BD2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		C8330BA42D4E832100538BD2 /* AddEditCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCategoryViewController.swift; sourceTree = "<group>"; };
+		C8330BA82D4E8B7600538BD2 /* CategoryUpdateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUpdateDelegate.swift; sourceTree = "<group>"; };
+		C8330BAA2D4E8BB800538BD2 /* CategoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProtocol.swift; sourceTree = "<group>"; };
 		C8FDFD0C2D2F71930092EFCB /* CoreAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FDFD0F2D2F71930092EFCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8FDFD112D2F71930092EFCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +98,69 @@
 			isa = PBXGroup;
 			children = (
 				C8FDFD452D3166FF0092EFCB /* TestModel.xcdatamodeld */,
+				C8330B952D4DA30200538BD2 /* CoreDataManager.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C8330B972D4DAB0700538BD2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C8330B982D4DAE9800538BD2 /* CategoryRepository.swift */,
+				C8330B9A2D4DB0DF00538BD2 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C8330B9C2D4DB12700538BD2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8330BA32D4E82D600538BD2 /* Main */,
+				C8330BA22D4E82C700538BD2 /* Tasks */,
+				C8330BA12D4E82B100538BD2 /* Categories */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C8330BA12D4E82B100538BD2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C8330B9D2D4DC48300538BD2 /* CategoriesViewController.swift */,
+				C8330BA42D4E832100538BD2 /* AddEditCategoryViewController.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C8330BA22D4E82C700538BD2 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				C8330B9F2D4DC55900538BD2 /* TasksViewController.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		C8330BA32D4E82D600538BD2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C8FDFD132D2F71930092EFCB /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C8330BA62D4E8ACF00538BD2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C8330BAA2D4E8BB800538BD2 /* CategoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C8330BA72D4E8B4600538BD2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C8330BA82D4E8B7600538BD2 /* CategoryUpdateDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		C8FDFD032D2F71930092EFCB = {
@@ -110,9 +187,12 @@
 			isa = PBXGroup;
 			children = (
 				C8330B942D47D3F100538BD2 /* Data */,
+				C8330BA62D4E8ACF00538BD2 /* Protocols */,
+				C8330B972D4DAB0700538BD2 /* Repositories */,
+				C8330B9C2D4DB12700538BD2 /* ViewControllers */,
+				C8330BA72D4E8B4600538BD2 /* Delegates */,
 				C8FDFD0F2D2F71930092EFCB /* AppDelegate.swift */,
 				C8FDFD112D2F71930092EFCB /* SceneDelegate.swift */,
-				C8FDFD132D2F71930092EFCB /* ViewController.swift */,
 				C8FDFD152D2F71930092EFCB /* Main.storyboard */,
 				C8FDFD182D2F71960092EFCB /* Assets.xcassets */,
 				C8FDFD1A2D2F71960092EFCB /* LaunchScreen.storyboard */,
@@ -295,10 +375,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8330BA52D4E832100538BD2 /* AddEditCategoryViewController.swift in Sources */,
+				C8330BA92D4E8B7600538BD2 /* CategoryUpdateDelegate.swift in Sources */,
 				C8FDFD142D2F71930092EFCB /* ViewController.swift in Sources */,
 				C8FDFD102D2F71930092EFCB /* AppDelegate.swift in Sources */,
 				C8FDFD122D2F71930092EFCB /* SceneDelegate.swift in Sources */,
+				C8330BAB2D4E8BB800538BD2 /* CategoryProtocol.swift in Sources */,
+				C8330B992D4DAE9800538BD2 /* CategoryRepository.swift in Sources */,
+				C8330B962D4DA30200538BD2 /* CoreDataManager.swift in Sources */,
 				C8FDFD472D3166FF0092EFCB /* TestModel.xcdatamodeld in Sources */,
+				C8330B9E2D4DC48300538BD2 /* CategoriesViewController.swift in Sources */,
+				C8330B9B2D4DB0DF00538BD2 /* TaskRepository.swift in Sources */,
+				C8330BA02D4DC55900538BD2 /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

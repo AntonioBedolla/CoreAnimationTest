@@ -20,6 +20,12 @@ class ViewController: UIViewController {
                 view.addSubview(animatedView)
 
                 startAnimations()
+        
+        let showCategoriesButton = UIButton(type: .system)
+                showCategoriesButton.setTitle("Ver Categorías", for: .normal)
+                showCategoriesButton.addTarget(self, action: #selector(showCategories), for: .touchUpInside)
+                showCategoriesButton.frame = CGRect(x: 50, y: 200, width: 200, height: 50)
+                view.addSubview(showCategoriesButton)
     }
 
     func startAnimations() {
@@ -51,5 +57,13 @@ class ViewController: UIViewController {
             groupAnimation.repeatCount = .infinity
             animatedView.layer.add(groupAnimation, forKey: "colorAndScale")
         }
-
+    
+    @objc func showCategories() {
+            let categoriesVC = CategoriesViewController()
+            //categoriesVC.modalPresentationStyle = .fullScreen
+            //present(categoriesVC, animated: true)
+        //let navigationController = UINavigationController(rootViewController: categoriesVC)
+        //present(navigationController, animated: true)
+        navigationController?.pushViewController(categoriesVC, animated: true)
+        }
 }
